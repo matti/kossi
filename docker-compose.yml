@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  app:
+    build: .
+    image: ${IMAGE:-kossi}
+    ports:
+      - 1234:1234
+      - 8080:8080
